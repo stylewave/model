@@ -1,0 +1,71 @@
+﻿<include file="Public:header" />
+<!-- 内容 -->
+<div class="main" >
+    <div class="banners">
+        <foreach name="ad" item="v">
+            <if condition="$v['pid'] eq 15">
+                <img src="{$v.imgsrc}" alt="">
+            </if>
+        </foreach>
+    </div>
+    <div class="IndexNavbar">
+        <div class="block">
+            <div class="nav p">
+                <a href="javascript:;" class="actives">人才招聘</a>
+            </div>
+        </div>
+    </div>
+    <div class="indexBoxkj">
+        <div class="block">
+           <div class="NewsCenter" style="padding:1px 0">
+                <div class="AboutUs2 p">
+                    <div class="lf" id="AboutUs2Div">
+                        <div class="AboutUs2Div">
+                            <span>职位名称</span>
+                            <span>职位类别</span>
+                            <span>工作地点</span>
+                            <span>招聘人数</span>
+                            <span></span>
+                        </div>
+                        <foreach name="info" item="v">
+                        <div class="AboutUs2List">
+                            <div class="a ">
+                                <span>{$v.title}</span>
+                                <span>{$v.cate}</span>
+                                <span>{$v.address}</span>
+                                <span>{$v.num}</span>
+                                <a></a>
+                            </div>
+                            <div class="b">
+                                {$v.content|htmlspecialchars_decode}
+                                <a href="{:U('jobdetail')}?id={$v.id}">申请岗位</a>
+                            </div>
+                        </div>
+                        </foreach>
+                    </div>
+                    <div class="rt">
+                        <p>最新职位</p>
+                        <ul>
+                            <foreach name="floor" item="v">
+                            <li>{$v.title}</li>
+                            </foreach>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 分页-->
+                <div class="other_page">
+                    <div>{$page}</div>
+                </div>
+                <!-- 分页 ---end---->
+                <div style="height:50px;"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $("#AboutUs2Div>div.AboutUs2List>div.a>a").click(function(){
+        $(this).parent("div.a").parent("div.AboutUs2List").toggleClass("actives").siblings("div.actives").removeClass("actives");
+        $(this).parent("div.a").siblings("div.b").slideToggle().parent("div.AboutUs2List").siblings("div.AboutUs2List").children("div.b").slideUp();
+    });
+</script>
+</div><!-- main end-->
+<include file="Public:footer" />

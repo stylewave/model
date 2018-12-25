@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes">
+    <title>{$config.name}</title>
+    <meta name="description" content="{$config.description}">
+    <meta name="keywords" content="{$config.keywords}">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/public.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/index.css">
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/public.js"></script>
+</head>
+<body>
+<div class="header  p">
+    <div class="NavTop">
+        <div class="block">
+            <a href="tencent://message/?uin={$config.qq}&Site=&Menu-=yes" ><img src="__PUBLIC__/Home/images/kefu.png" alt=""> 在线客服</a>
+            <p class="in_block rt">
+                <span style="margin-right:5px;"><img src="__PUBLIC__/Home/images/topheader.png" alt=""> 咨询热线：{$config.tel}</span>
+            </p>
+        </div>
+    </div>
+    <div class="headerContent">
+        <div class="block p">
+            <a href="/" class="logo in_block"><img src="{$config.logo}"/></a>
+            <div class="Mennavs p rt">
+                <ul class="in_block">
+                    <foreach name="nav" item="v">
+                    <li class="<eq name='Think.const.ACTION_NAME' value='{$v[url]}'>active</eq>"><a href="{:U($v[url])}">{$v.name}</a></li>
+                    </foreach>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/JavaScript">
+    var pathArray = location.pathname.split('/');
+    $("a[href*='"+pathArray[pathArray.length-1]+"']").parent('li').addClass('active');
+</script>

@@ -1,0 +1,30 @@
+﻿<include file="Public:header" />
+<div class="main" >
+    <div class="banners">
+        <foreach name="ad" item="v">
+            <if condition="$v['pid'] eq 11">
+                <img src="{$v.imgsrc}" alt="">
+            </if>
+        </foreach>
+    </div>
+    <div class="IndexNavbar">
+        <div class="block">
+            <div class="nav p">
+                <foreach name="title" item="v">
+                    <a href="{:U('about')}?id={$v.id}" class="<if condition='$_GET[id] eq $v[id]'>actives</if>">{$v.name}</a>
+                </foreach>
+            </div>
+        </div>
+    </div>
+    <div class="AboutContacts">
+        <div class="block">
+            <div style="font-size: 14px;color:#666;line-height: 25px;">
+                {$data.content|htmlspecialchars_decode}
+                <if condition="$data['imgsrc'] neq ''">
+                <img src="{$data.imgsrc}" alt="" style="margin-top: 50px">
+                </if>
+            </div>
+        </div>
+    </div>
+</div><!-- main end-->
+<include file="Public:footer" />

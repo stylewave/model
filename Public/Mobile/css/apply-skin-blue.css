@@ -1,0 +1,90 @@
+﻿@charset "utf-8"; 
+/*2015-02-17 huangying css*/
+/*blue*/
+.logo-line{border-color: rgba(255,255,255,.2); display:block;}
+/*logo*/
+.navbar-blue .app-navbar-logo {
+    background: url(../images/logo-approval-white.png) no-repeat 8px center;
+}
+.navbar-blue{ background-color:#09A4CF;border-bottom:none; box-shadow:0 3px 6px rgba(0,0,0,.06);}
+.navbar-blue a{ color:#FFF;}
+/*导航当前选中样式*/
+.app-navbar-reback .navbar-reback-text{color:rgba(255,255,255,.75);}
+.navbar-blue.app-navbar .navbar-itembg a:hover{color:rgba(255,255,255,.75); }
+.navbar-blue.app-navbar .navbar-itembg a.active {background:url(../images/navbar-itembg.png) repeat center center;}
+/*返回后台*/
+.navbar-blue .navbar-reback a:hover{color:rgba(255,255,255,.75);}
+/*页面切换*/
+.navbar-blue .pageSelect-current{ color:#FFF; border:none;background:url(../images/navbar-itembg.png) repeat center center;}
+.navbar-blue .pageSelect-current .pageSelect-text:hover{color:rgba(255,255,255,.75);}
+.navbar-blue .panel-heading{background-color:#09A4CF; color:#FFF; border:none;}
+.navbar-blue .panel-body{border:1px #DDD solid; border-top:none;}
+.navbar-blue .pageSelect-list .pageSelect-arrow{ border-color:transparent transparent #09A4CF transparent; }
+.navbar-blue .pageSelect-list .pageSelect-arrow s{ border-color:transparent transparent #09A4CF transparent; }
+.navbar-blue .nav-pageSelect>li>a{ color:#306181;}
+/*语言切换*/
+.navbar-blue .language-current{color:#FFF; border-left:1px rgba(255,255,255,.2) solid; border-right:1px rgba(255,255,255,.2) solid;}
+.navbar-blue .language-current .language-current-container {background:url(../images/navbar-itembg.png) repeat center center;}
+.navbar-blue .language-current .language-current-container .languageSelect-text:hover{color:rgba(255,255,255,.75);}
+/*head导航列表边框颜色*/
+.navbar-blue .toolbar li.toolbar-right {border-left: 1px rgba(255,255,255,.2) solid;}
+/*页面选择tab页*/
+.nav-pageSelect>li>a{background-color:#E6EEF5;}
+.nav-pageSelect>li>a:hover{background-color:#E6EEF5;}
+.navbar-blue .nav-tabs>li.active>a:focus,.navbar-blue .nav-tabs>li.active>a:hover{ color:#306181;}
+.navbar-blue .nav-tabs>li>a:hover{background-color:#DBEBF9;}
+/*页面选择按钮*/
+.navbar-blue .btn-info{color:#fff;background-color:#09A4CF;border-color:#099DC8;}
+.navbar-blue .btn-info.focus,.navbar-blue .btn-info:focus{color:#fff;background-color:#099DC8;border-color:#099DC8}
+.navbar-blue .btn-info:hover{color:#fff;background-color:#099DC8;border-color:#099DC8}
+/*页面选择页面列表*/
+.navbar-blue .page-list>li>h3>.pageList-leftIcon{color:#7A92A5;}
+.navbar-blue .page-list>li>h3>.pageList-text{color:#2B5672;}
+.navbar-blue .page-list>li>h3>.pageList-text:hover{color:#3BAFDA;}
+.navbar-blue .page-list>li>h3>.page-setup>a{color:#2B5672;}
+.navbar-blue .page-list>li>h3>.page-setup>a:hover{color:#3BAFDA; }
+.navbar-blue .page-list>li>h3:hover{background:#EAF7FF;}
+.navbar-blue .page-list>li>h3.active{background:#DBEBF9;}
+.navbar-blue .page-sublist>li>h3:hover{background:#EAF7FF;}
+.navbar-blue .page-sublist>li>h3>.pageList-text{color:#2B5672;}
+.navbar-blue .page-sublist>li>h3>.pageList-text:hover{color:#3BAFDA;}
+.navbar-blue .page-sublist>li>h3>.page-setup>a{color:rgba(43,86,114,1);}
+.navbar-blue .page-sublist>li>h3>.page-setup>a:hover{color:#3BAFDA;}
+/*页面选择下拉列表头部icon*/
+.panel-pageSelect .panel-icon{background:rgba(9,139,177,1); color:#FFF;}
+.panel-pageSelect .panel-icon:hover{background:rgba(4,116,148,1);}
+.panel-pageSelect-set .panel-icon{background:rgba(9,139,177,1);}
+.panel-pageSelect-set .panel-icon:hover{background:rgba(4,116,148,1);}
+/*页面选择下拉层*/
+.navbar-blue .dropdown-menu.dropdown-menu-ul{border-color:#DDD;}
+.navbar-blue .dropdown-menu.dropdown-menu-ul .dropdown-menu-caret span{border-color:transparent #DDD transparent transparent;}
+/*左侧导航*/
+.frame-sidebar.frame-sidebar-blue{background:#FFF; border-right:1px #D3E1ED solid;}
+.frame-sidebar-blue .menu{border:none; margin-top:0px;}
+.frame-sidebar-blue .menu .menu-item{color:#2B5672; border-color:#D3E1ED;}
+.frame-sidebar-blue .menu .menu-item.current{
+    background:-webkit-gradient(linear, left top, left bottom, from(#09A4CF), to(#03C1BE));
+    background-image:linear-gradient(315deg,#09A4CF,#03C1BE);
+    background-image:-moz-linear-gradient(315deg, #09A4CF, #03C1BE);
+    background-image:-ms-linear-gradient(315deg, #09A4CF, #03C1BE);
+    background-image:-o-linear-gradient(315deg, #09A4CF, #03C1BE);
+    background:#09A4CF\9\0;
+}
+.frame-sidebar-blue .menu .menu-item:hover{color:#3BAFDA;}
+.frame-sidebar-blue .menu .menu-item .menu-title-text{color:#2B5672;}
+.frame-sidebar-blue .menu .menu-item.current .menu-title-text{color:#FFF;}
+.frame-sidebar-blue .menu .menu-item.current .menu-title-icon{color:#FFF;}
+/*modal弹出层按钮*/
+.modal-blue .btn-info{color:#fff;background-color:#09A4CF;border-color:#099DC8;}
+.modal-blue .btn-info.focus,.navbar-blue .btn-info:focus{color:#fff;background-color:#099DC8;border-color:#099DC8}
+.modal-blue .btn-info:hover{color:#fff;background-color:#099DC8;border-color:#099DC8;}
+
+/*frame-container*/
+.app-frame-container{background:#E6EEF5;}
+
+/*PCMobile switch*/
+/*PCMobile switch*/
+.PCSwitch li a{text-decoration:none;}
+.PCSwitch li a:hover{text-decoration:none;}
+.PCSwitch li a.active {background-color:#E6EEF5;color:#FFF;}
+

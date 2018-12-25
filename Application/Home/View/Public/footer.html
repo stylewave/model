@@ -1,0 +1,33 @@
+<!--底部-->
+<div class="footer p" >
+    <div class="block">
+        <div class="in_block">
+            <h1 style="" class="h1"><b style="">{$config.name}</b></h1>
+            <p>地址：{$config.address}        邮编：{$config.yb}     电话：{$config.phones}</p>
+            <p>传真：{$config.phone} {$config.records}</p>
+        </div>
+        <div class="rt">
+            <p> ©BABY ANGLE 2018 All RIGHTS RESERVERD</p>
+            <div class="Share">
+                <div class="in_block Saoma" style="margin-right:10px;">
+                    <img src="__PUBLIC__/Home/images/sina.png" alt="">
+                    <img src="{$config.footer_logo}" alt=""  class="kk" style="">
+                </div>
+                <div class="in_block Saoma">
+                    <img src="__PUBLIC__/Home/images/wechat.png" alt="">
+                    <img src="{$config.img}" alt="" class="kk">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(".Share >div.Saoma").mouseenter(function(){
+        $(this).children("img.kk").show();
+    }).mouseleave(function(){
+        $(this).children("img.kk").hide();
+    });
+</script>
+<!--底部 end-->
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿<include file="Public:header" />
+<body style="background:#3c8dbc;">
+    <div class="topleft">
+		<a target="rightFrame" href="{:U('Index/main')}"><img src="__PUBLIC__/Admin/images/zhuye.png"/> 后台内容管理系统</a>
+	</div>
+    <div class="topright">
+		<a href="/" target="_blank"><img src="__PUBLIC__/Admin/images/ico01.png"/>网站前台</a>
+		<a target="rightFrame" href="{:U('/Admin/System/admin')}"><img src="__PUBLIC__/Admin/images/sx_1.png"/>清除缓存</a>
+		<!--<a href="javascript:;"><img src="__PUBLIC__/Admin/images/users.png"/>欢迎：<?php echo $_SESSION['username']; ?></a>-->
+		<a target="_top" href="{:U('Login/logout')}"><img src="__PUBLIC__/Admin/images/out.png"/>安全退出</a>
+    </div>
+</body>
+</html>

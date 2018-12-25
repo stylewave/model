@@ -1,0 +1,51 @@
+<include file="Public:header" />
+<body>
+<link href="__PUBLIC__/Admin/css/select.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.idTabs.min.js"></script>
+<link href="__PUBLIC__/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<div class="place">
+	<span>当前位置：</span>
+	<ul class="placeul">
+		<li><a href="javascript:;">人才招聘</a></li>
+		<li><a href="<?php echo U('zhaopin/indexs')?>">申请列表</a></li>
+		<li><a href="javascript:;">详细信息</a></li>
+	</ul>
+</div>
+<div class="formbody">
+	<div id="usual1" class="usual"> 
+		<div class="itab">
+			<ul> 
+				<li><a href="#tab1" class="selected">详细信息</a></li>
+			</ul>
+			<ul class="toolbar">
+				<li style="height:30px;line-height:30px;padding-right:0;text-align: center;width: 100px;background: #3c8dbc;">
+					<a href="javascript:;" onclick="javascript:history.back();return false;" style="padding-left:0; padding-right:0;color:#ffffff;">
+						<img src="__PUBLIC__/Admin/images/back.png" class="back"> 返回</a>
+				</li>
+			</ul>
+		</div> 
+		<div id="tab1" class="tabson">
+			<ul class="forminfo">
+
+				<li><label>申请职位<b>*</b></label><input value="{$data.title}" type="text" class="dfinput"/></li>
+				<li><label>姓名<b>*</b></label><input value="{$data.username}" type="text" class="dfinput"/></li>
+				<li><label>性别<b>*</b></label><input value="{$data.sex}" type="text" class="dfinput"/></li>
+				<li><label>出生年月<b>*</b></label><input value="{$data.birthday}" type="text" class="dfinput"/></li>
+				<li><label>电话<b>*</b></label><input value="{$data.tel}" type="text" class="dfinput"/></li>
+				<li><label>邮箱<b>*</b></label><input value="{$data.email}" type="text" class="dfinput"/></li>
+				<li><label>地址<b>*</b></label><input value="{$data.address}" type="text" class="dfinput"/></li>
+				<li><label>籍贯<b>*</b></label><input value="{$data.area}" type="text" class="dfinput"/></li>
+				<li><label>学历<b>*</b></label><input value="{$data.xl}" type="text" class="dfinput"/></li>
+				<li><label>学校<b>*</b></label><input value="{$data.school}" type="text" class="dfinput"/></li>
+				<li><label>专业<b>*</b></label><input value="{$data.zy}" type="text" class="dfinput"/></li>
+				<li><label>邮编<b>*</b></label><input value="{$data.yb}" type="text" class="dfinput"/></li>
+				<li><label>所获奖项</label><textarea rows="6" class="desc">{$data.content}</textarea></li>
+				<li><label>工作经历</label><textarea rows="6" class="desc">{$data.content_a}</textarea></li>
+				<li><label>业余爱好</label><textarea rows="6" class="desc">{$data.content_b}</textarea></li>
+
+			</ul>
+		</div>
+	</div>
+</div>  
+</body>
+</html>

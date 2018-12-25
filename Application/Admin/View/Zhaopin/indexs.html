@@ -1,0 +1,97 @@
+<include file="Public:header" />
+<body>
+	<div class="place">
+		<span>当前位置：</span>
+		<ul class="placeul">
+			<li><a href="javascript:;">人才招聘</a></li>
+			<li><a href="<?php echo U('Zhaopin/indexs')?>">申请列表</a></li>
+		</ul>
+    </div>
+<div class="rightinfo">
+	<div class="tools">
+		<ul class="toolbar" style="float: left">
+			<li style="background: #dd4b39;"><a href="javascript:;" onclick="submit_form()"><span><img src="__PUBLIC__/Admin/images/del.png" /></span>批量删除</a></li>
+		</ul>
+		</ul>
+	</div>
+    <table class="tablelist">
+    	<thead>
+			<tr>
+				<th width="50"><input type="checkbox" onclick="swapCheck()"></th>
+				<th>申请职位</th>
+				<th>姓名</th>
+				<th>性别</th>
+				<th>电话</th>
+				<th>邮箱</th>
+				<th>学历</th>
+				<th>专业</th>
+				<th width="150">提交时间</th>
+				<th style="text-align:center" width="200">操作</th>
+			</tr>
+        </thead>
+        <tbody>
+		<foreach name="list" item="v">
+			<tr>
+				<td><input type="checkbox" value="{$v.id}" id="idarr" name="idarr[]"></td>
+				<td>{$v.title}</td>
+				<td>{$v.username}</td>
+				<td>{$v.sex}</td>
+				<td>{$v.tel}</td>
+				<td>{$v.email}</td>
+				<td>{$v.xl}</td>
+				<td>{$v.zy}</td>
+				<td>{$v.addtime|date='Y-m-d H:i',###}</td>
+				<td>
+					<a href="<?php echo U('edits',array('id'=>$v['id']))?>" class="tablelinks"><img src="__PUBLIC__/Admin/images/look.png" class="edit">查看更多</a>
+					<a onclick="return confirm('确定要删除吗？');" href="<?php echo U('aDels')?>?id=<?php echo $v['id']?>&active=delete" class="tablelink"><img src="__PUBLIC__/Admin/images/del.png" class="del">删除</a>
+				</td>
+			</tr>
+		</foreach>	
+        </tbody>
+    </table>
+    <div class="pagin">
+        <div class="paginList">
+			<?php echo $page ?>
+        </div>
+    </div>
+</div>    
+<script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+</script>
+	<script>
+        function submit_form(){
+            var check_val =[];//定义一个数组
+            $('input[name="idarr[]"]:checked').each(function(){
+                check_val.push($(this).val());
+            });
+            var del = confirm('确定要删除吗？');
+            if(del == true){
+                if(check_val == ''){
+                    alert('请选择要删除的内容！');
+                }else{
+                    window.location.href="{:U('Admin/Zhaopin/indexs')}?idarr="+check_val;
+                }
+            }else{
+                return false;
+            }
+        };
+	</script>
+	<script type="text/javascript">
+        //checkbox 全选/取消全选
+        var isCheckAll = false;
+        function swapCheck() {
+            if (isCheckAll) {
+                $("input[type='checkbox']").each(function() {
+                    this.checked = false;
+                });
+                isCheckAll = false;
+            } else {
+                $("input[type='checkbox']").each(function() {
+                    this.checked = true;
+                });
+                isCheckAll = true;
+            }
+        }
+	</script>
+</body>
+</html>

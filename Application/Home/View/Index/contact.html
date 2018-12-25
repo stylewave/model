@@ -1,0 +1,46 @@
+﻿<include file="Public:header" />
+<div class="main" >
+    <div class="banners">
+        <foreach name="ad" item="v">
+            <if condition="$v['pid'] eq 16">
+                <img src="{$v.imgsrc}" alt="">
+            </if>
+        </foreach>
+    </div>    
+    <div class="AboutContacts">
+        <!-- 地图 -->
+            <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=a08eaf5a3473574f2e70807902f455a8"></script>
+            <div id="container" style="width:100%; height:720px;"></div>
+            <script>
+                $(function(){
+                    var map = new AMap.Map('container',{
+                        zoom: 14,
+                        center: [116.821421,40.359562]
+                    });
+                    marker = new AMap.Marker({
+                        position: [116.821421,40.359562],
+                        title:"{$config.name}"
+                    });
+                    marker.setMap(map);
+                    var info = new AMap.InfoWindow({
+                        content:"{$config.name}<br>{$config.address}",
+                        offset:new AMap.Pixel(0,-28)
+                    });
+                    info.open(map,marker.getPosition());
+                });
+            </script>
+        <div class="block ContactUs">
+            <div  style="height:100px;"></div>
+            <div class="in_block" style="width: 588px;"><img src="__PUBLIC__/Home/images/contacts.jpg" alt="" style="max-width: 100%;border-right:1px solid #eaeaea;"></div>
+            <div class="in_block" style="width: 600px;">
+                <p class="Contactp"><img src="__PUBLIC__/Home/images/contactss_03.jpg" alt="">地址：{$config.address}</p>
+                <p class="Contactp"><img src="__PUBLIC__/Home/images/contactss_06.jpg" alt="">邮箱：{$config.email}</p>
+                <p class="Contactp"><img src="__PUBLIC__/Home/images/contactss_08.jpg" alt="">咨询热线：{$config.tel}</p>
+                <p class="Contactp"><img src="__PUBLIC__/Home/images/contactss_10.jpg" alt="">传真：{$config.phone}</p>
+            </div>
+            <div  style="height:100px;"></div>
+        </div>
+    </div>
+</div><!-- main end-->
+<!--底部-->
+<include file="Public:footer" />

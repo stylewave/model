@@ -1,0 +1,29 @@
+﻿<include file="Public:header" />
+<div class="main" >
+    <div class="banners">
+        <foreach name="ad" item="v">
+            <if condition="$v['pid'] eq 14">
+                <img src="{$v.imgsrc}" alt="">
+            </if>
+        </foreach>
+    </div>
+    <div class="IndexNavbar">
+        <div class="block">
+            <div class="nav p">
+                <foreach name="newsNav" item="v">
+                    <a href="{:U('news')}?id={$v.id}" class="<if condition='$v[id] eq $detail[cat_id]'>actives</if>">{$v.name}</a>
+                </foreach>
+            </div>
+        </div>
+    </div>
+    <div class="AboutContacts">
+        <div class="block NewsDetail" >
+            <h1 class="h5">{$data.title}</h1>
+            <p class="data">浏览量：{$data.click} 　添加时间：{$data.addtime|date='Y-m-d H:i:s',###} </p>
+            <div class="NewsDetailinfo">
+                {$data.content|htmlspecialchars_decode}
+            </div>     
+        </div>
+    </div>
+</div><!-- main end-->
+<include file="Public:footer" />

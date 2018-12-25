@@ -1,0 +1,133 @@
+﻿<include file="Public:header" />
+<div class="main" >
+    <div class="banners">
+        <foreach name="ad" item="v">
+            <if condition="$v['pid'] eq 15">
+                <img src="{$v.imgsrc}" alt="">
+            </if>
+        </foreach>
+    </div>
+    <div class="IndexNavbar">
+        <div class="block">
+            <div class="nav p">
+                <a href="{:U('job')}" class="actives">人才招聘</a>
+            </div>
+        </div>
+    </div>
+    <div class="indexBoxkj">
+        <div class="block" style="background: #fff">
+            <div class="Publics block">        
+                <div class="NewsCenter">
+                    <div style="height:10px;"></div>
+                    <form id="sub_form" enctype="multipart/form-data">
+                    <div class="AboutUs22 ">
+                        <div>
+                            <span>应聘职位：</span>
+                            <select name="title">
+                                <foreach name="about" item="v">
+                                    <option value="{$v.title}" <if condition="$v['id'] eq $_GET['id']"> selected </if>>{$v.title}</option>
+                                </foreach>
+                            </select>
+                        </div>
+                        <div>
+                            <span>姓名：</span>
+                            <input type="text" name="username">
+                        </div>
+                        <div>
+                            <span>性别：</span>
+                            <span class="p">
+                        <input type="radio" name="sex" value="男" checked>男 　　　<input type="radio" name="sex" value="女">女
+
+                    </span>
+                        </div>
+                        <div>
+                            <span>出生年月：</span>
+                            <input type="date" name="birthday">
+                        </div>
+                        <div>
+                            <span>籍贯：</span>
+                            <input type="text" name="area">
+                        </div>
+                        <div>
+                            <span>联系电话：</span>
+                            <input type="text" name="tel">
+                        </div>
+                        <div>
+                            <span>邮编：</span>
+                            <input onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="10" size="14" name="yb" type="text" />
+                        </div>
+                        <div>
+                            <span>E-mail：</span>
+                            <input type="text" name="email">
+                        </div>
+                        <div>
+                            <span>学历：</span>
+                            <input type="text" name="xl">
+                        </div>
+                        <div>
+                            <span>专业：</span>
+                            <input type="text" name="zy">
+                        </div>
+                        <div>
+                            <span>学校：</span>
+                            <input type="text" name="school">
+                        </div>
+                        <div>
+                            <span>通讯地址：</span>
+                            <input type="text" name="address">
+                        </div>
+                        <div>
+                            <span>所获奖项：</span>
+                            <textarea name="content"></textarea>
+                        </div>
+                        <div>
+                            <span>工作经历：</span>
+                            <textarea name="content_a"></textarea>
+                        </div>
+                        <div>
+                            <span>业余爱好：</span>
+                            <textarea name="content_b"></textarea>
+                        </div>
+                        <!--<div class="files">-->
+                            <!--<span>上传简历：</span>-->
+                            <!--<input type="file" name="img">-->
+                        <!--</div>-->
+                        <a href="javascript:;" class="sub">提交信息</a>
+                    </div>
+                    </form>
+                    <div style="height:50px;"></div>
+                </div>
+            </div>           
+        </div>
+    </div>
+<script type="text/javascript">
+$("#AboutUs2Div>div.AboutUs2List>div.a>a").click(function(){
+    $(this).parent("div.a").parent("div.AboutUs2List").toggleClass("actives").siblings("div.actives").removeClass("actives");
+    $(this).parent("div.a").siblings("div.b").slideToggle().parent("div.AboutUs2List").siblings("div.AboutUs2List").children("div.b").slideUp();
+});
+</script>
+    <script type="text/javascript">
+        $(".sub").click(function(){
+            // 先接收表单中的数据，并拼成这样式格式的字符串： name=tom&age=231
+            var form = $("#sub_form");
+            var formData = form.serialize();
+            $.ajax({
+                type : "POST",
+                url : "<?php echo U('Index/jobdetail')?>",
+                data : formData, // 表单中要提交的数据
+                dataType : "json",  // 服务器返回的数据格式
+                success : function(data)
+                {
+                    if(data.status == 0)
+                    {
+                        alert(data.info);
+                    }else{
+                        alert('提交成功！');
+                        form.trigger('reset'); //提交失败或成功之后清空表单
+                    }
+                }
+            });
+        });
+    </script>
+</div><!-- main end-->
+<include file="Public:footer" />

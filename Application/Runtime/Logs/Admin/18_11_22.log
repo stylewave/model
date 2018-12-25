@@ -1,0 +1,733 @@
+[ 2018-11-22T09:16:31+08:00 ] 127.0.0.1 /Admin/System/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001965s ]
+
+[ 2018-11-22T09:16:45+08:00 ] 127.0.0.1 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+SQL: select VERSION() [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2018-11-22T09:16:47+08:00 ] 127.0.0.1 /Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `yx_config` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `yx_config` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Use of undefined constant is_open - assumed 'is_open' E:\data\8903\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 100 行.
+NOTIC: [8] Use of undefined constant is_open - assumed 'is_open' E:\data\8903\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 101 行.
+NOTIC: [8] Use of undefined constant is_open - assumed 'is_open' E:\data\8903\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 102 行.
+NOTIC: [8] Use of undefined constant is_open - assumed 'is_open' E:\data\8903\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2018-11-22T09:16:50+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2018-11-22T09:16:50+08:00 ] 127.0.0.1 /Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2018-11-22T09:16:50+08:00 ] 127.0.0.1 /Admin/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2018-11-22T09:16:51+08:00 ] 127.0.0.1 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+SQL: select VERSION() [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2018-11-22T09:18:57+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-11-22T09:18:57+08:00 ] 127.0.0.1 /Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2018-11-22T09:18:57+08:00 ] 127.0.0.1 /Admin/Login/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2018-11-22T09:20:59+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `yx_admin` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yx_admin` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yx_admin` ORDER BY admin_id asc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-11-22T09:21:03+08:00 ] 127.0.0.1 /Admin/User/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `yx_admin` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: data E:\data\8903\Application\Admin\Controller\UserController.class.php 第 59 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2018-11-22T09:21:10+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `yx_admin` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yx_admin` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yx_admin` ORDER BY admin_id asc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2018-11-22T09:21:59+08:00 ] 127.0.0.1 /Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `yx_config` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `yx_config` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Use of undefined constant is_open - assumed 'is_open' E:\data\8903\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 100 行.
+NOTIC: [8] Use of undefined constant is_open - assumed 'is_open' E:\data\8903\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 101 行.
+NOTIC: [8] Use of undefined constant is_open - assumed 'is_open' E:\data\8903\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 102 行.
+NOTIC: [8] Use of undefined constant is_open - assumed 'is_open' E:\data\8903\Application\Runtime\Cache\Admin\2c2c98dfae62b20ffdb7278df0486bd4.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-11-22T09:22:46+08:00 ] 127.0.0.1 /Admin/System/friendLink.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `yx_friendlink` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yx_friendlink` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yx_friendlink` WHERE ( 1=1 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\a3929aba458cbab2b009c5c41084340c.php 第 60 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\a3929aba458cbab2b009c5c41084340c.php 第 60 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\a3929aba458cbab2b009c5c41084340c.php 第 60 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\a3929aba458cbab2b009c5c41084340c.php 第 60 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\a3929aba458cbab2b009c5c41084340c.php 第 60 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\a3929aba458cbab2b009c5c41084340c.php 第 60 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\a3929aba458cbab2b009c5c41084340c.php 第 60 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\a3929aba458cbab2b009c5c41084340c.php 第 60 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\a3929aba458cbab2b009c5c41084340c.php 第 60 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\a3929aba458cbab2b009c5c41084340c.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2018-11-22T09:22:52+08:00 ] 127.0.0.1 /Admin/System/friend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `yx_friendlink` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: data E:\data\8903\Application\Admin\Controller\SystemController.class.php 第 108 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\250e692293cf8c9c82d9b53adf668218.php 第 50 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\250e692293cf8c9c82d9b53adf668218.php 第 51 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\250e692293cf8c9c82d9b53adf668218.php 第 52 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\250e692293cf8c9c82d9b53adf668218.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2018-11-22T09:23:02+08:00 ] 127.0.0.1 /Admin/Ad/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `yx_ad_position` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_ad_position a join yx_ad b on b.pid=a.id  WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM yx_ad_position a join yx_ad b on b.pid=a.id  WHERE ( 1=1 ) LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yx_ad_position`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-11-22T09:23:03+08:00 ] 127.0.0.1 /Admin/Ad/indexs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `yx_ad_position` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yx_ad_position` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yx_ad_position` ORDER BY id asc LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2018-11-22T09:23:06+08:00 ] 127.0.0.1 /Admin/Ad/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `yx_ad_position` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yx_ad_position a join yx_ad b on b.pid=a.id  WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM yx_ad_position a join yx_ad b on b.pid=a.id  WHERE ( 1=1 ) LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yx_ad_position`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\d1a9faa78703065528ba0b5c63ddd8e7.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2018-11-22T09:23:09+08:00 ] 127.0.0.1 /Admin/Ad/indexs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `yx_ad_position` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yx_ad_position` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yx_ad_position` ORDER BY id asc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2018-11-22T09:23:29+08:00 ] 127.0.0.1 /Admin/Nav/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `yx_nav` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `yx_nav`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant level - assumed 'level' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 46 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 47 行.
+NOTIC: [8] Use of undefined constant is_show - assumed 'is_show' E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 51 行.
+NOTIC: [8] Undefined variable: page E:\data\8903\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2018-11-22T09:23:37+08:00 ] 127.0.0.1 /Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `yx_article` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yx_article` WHERE (  1 = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.name FROM yx_article a JOIN yx_nav b ON a.cat_id = b.id  WHERE (  1 = 1  ) ORDER BY a.id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yx_nav` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `yx_nav`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 67 行.
+NOTIC: [8] Use of undefined constant is_index - assumed 'is_index' E:\data\8903\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-11-22T09:23:45+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `yx_article` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `yx_nav` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yx_nav`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data E:\data\8903\Application\Admin\Controller\ArticleController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\e16cf278f1c326e72baf6415dbd5ab87.php 第 77 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\e16cf278f1c326e72baf6415dbd5ab87.php 第 78 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\e16cf278f1c326e72baf6415dbd5ab87.php 第 79 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\e16cf278f1c326e72baf6415dbd5ab87.php 第 80 行.
+NOTIC: [8] Undefined variable: URL_home E:\data\8903\Application\Runtime\Cache\Admin\e16cf278f1c326e72baf6415dbd5ab87.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2018-11-22T09:24:01+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `yx_product` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yx_product` WHERE (  1 = 1  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.name FROM yx_product a JOIN yx_nav b ON a.cat_id=b.id  WHERE (  1 = 1  ) ORDER BY a.id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yx_nav` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yx_nav`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 75 行.
+NOTIC: [8] Use of undefined constant is_on_seal - assumed 'is_on_seal' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 78 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 75 行.
+NOTIC: [8] Use of undefined constant is_on_seal - assumed 'is_on_seal' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 78 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 75 行.
+NOTIC: [8] Use of undefined constant is_on_seal - assumed 'is_on_seal' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 78 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 75 行.
+NOTIC: [8] Use of undefined constant is_on_seal - assumed 'is_on_seal' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 78 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 75 行.
+NOTIC: [8] Use of undefined constant is_on_seal - assumed 'is_on_seal' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 78 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 75 行.
+NOTIC: [8] Use of undefined constant is_on_seal - assumed 'is_on_seal' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 78 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 75 行.
+NOTIC: [8] Use of undefined constant is_on_seal - assumed 'is_on_seal' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 78 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 75 行.
+NOTIC: [8] Use of undefined constant is_on_seal - assumed 'is_on_seal' E:\data\8903\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2018-11-22T09:24:32+08:00 ] 127.0.0.1 /Admin/Product/add/id/54.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `yx_product` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `yx_nav` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yx_nav`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yx_product` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yx_goods_pic` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pic`,`mid_pic` FROM `yx_goods_pic` WHERE `goods_id` = '54'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: URL_upload E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 15 行.
+NOTIC: [8] Undefined variable: URL_fileUp E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 16 行.
+NOTIC: [8] Undefined variable: URL_scrawlUp E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 17 行.
+NOTIC: [8] Undefined variable: URL_getRemoteImage E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 18 行.
+NOTIC: [8] Undefined variable: URL_imageManager E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 19 行.
+NOTIC: [8] Undefined variable: URL_imageUp E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 20 行.
+NOTIC: [8] Undefined variable: URL_getMovie E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 21 行.
+NOTIC: [8] Undefined variable: URL_home E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 22 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 81 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 82 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 83 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\8b641081e7ea680aaaea87475742484f.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-11-22T09:24:50+08:00 ] 127.0.0.1 /Admin/zhaopin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `yx_zp` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yx_zp` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yx_zp` WHERE ( 1=1 ) LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\c77184cf1f889dc1bf14d51c424e266a.php 第 61 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\c77184cf1f889dc1bf14d51c424e266a.php 第 61 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\c77184cf1f889dc1bf14d51c424e266a.php 第 61 行.
+NOTIC: [8] Use of undefined constant is_floor - assumed 'is_floor' E:\data\8903\Application\Runtime\Cache\Admin\c77184cf1f889dc1bf14d51c424e266a.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+

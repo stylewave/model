@@ -1,0 +1,31 @@
+<include file="Public:header" />
+<body>
+	<div class="place">
+		<span>当前位置：</span>
+		<ul class="placeul">
+			<li><a href="javascript:;">广告管理</a></li>
+			<li><a href="<?php echo U('AdPosition/index')?>">广告位置</a></li>
+			<li><a href="javascript:;">编辑</a></li>
+		</ul>
+    </div>
+    <div class="formbody">    
+		<div class="formtitle"><span>基本信息</span>
+		<ul class="toolbar">
+			<li style="height:30px;line-height:30px;padding-right:0;text-align: center;width: 100px;background: #3c8dbc;">
+				<a href="javascript:;" onclick="javascript:history.back();return false;" style="padding-left:0; padding-right:0;color:#ffffff;">
+					<img src="__PUBLIC__/Admin/images/back.png" class="back"> 返回</a>
+			</li>
+        </ul>
+		</div>    
+		<form action="" method="post" enctype="multipart/form-data">		
+		<ul class="forminfo">
+			<li><label>名称<b>*</b></label><input name="name" value="{$data.name}" type="text" class="dfinput" /></li>
+			<input type="hidden" name="id" value="{$data.id}">
+		</ul>
+			<ul>
+				<li><label>&nbsp;</label><input name="submit" type="submit" class="btn" value="保　存"/></li>
+			</ul>
+		</form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿<include file="Public:header" />
+<body style="background:#f0f9fd;">
+	<div class="lefttop">
+		<span><img src="__PUBLIC__/Admin/images/user_1.png" style="border-radius:100%"></span>
+		<font><?php echo $_SESSION['username']; ?></font>
+	</div>
+    <dl class="leftmenu">
+		<volist name="menu" id="vo">
+			<dd>
+				<div class="title">
+					<i></i>
+					<span><img src="__PUBLIC__/Admin/images/{$vo.icon}.png" /></span>{$vo.name}
+				</div>
+				<ul class="menuson">
+					<volist name="vo.val" id="value">
+						<li><cite></cite><a href="{$value.url}" target="rightFrame">{$value.name}</a><i></i></li>
+					</volist>
+				</ul>
+			</dd>
+		</volist>
+    </dl>
+<script type="text/javascript">
+$(function(){
+	$('.title').click(function(){
+	    $(this).parent('dd').siblings('dd').children('.title').find('i').css({"border":"","float":"","height":""});
+		var $ul = $(this).next('ul');
+		$('dd').find('ul').slideUp();
+		if($ul.is(':visible')){
+			$(this).next('ul').slideUp();
+            $(this).parent().find('.title i').css({"border":"","float":"","height":""});
+		}else{
+			$(this).next('ul').slideDown();
+            $(this).parent().find('.title i').css({"border":"2px solid #3c8dbc","float":"left","height":"40px","display":"inlineBlock"});
+		}
+	});
+})
+</script>	
+</body>
+</html>

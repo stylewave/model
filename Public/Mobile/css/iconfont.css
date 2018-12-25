@@ -1,0 +1,14 @@
+﻿@charset "utf-8";
+
+@font-face{
+  font-family:'clouddream';
+  src:url('../fonts/clouddream.eot');
+  src:url('../fonts/clouddream.eot') format('embedded-opentype'),
+  url('../fonts/clouddream.woff') format('woff'),
+  url('../fonts/clouddream.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal }
+
+.iconfont { display:inline-block; font-family:"clouddream"; font-size:16px; font-style:normal; cursor:default; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+
+

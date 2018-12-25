@@ -1,0 +1,87 @@
+<include file="Public:header" />
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.idTabs.min.js"></script>
+<body>
+	<div class="place">
+		<span>当前位置：</span>
+		<ul class="placeul">
+			<li><a href="javascript:;">系统设置</a></li>
+			<li><a href="<?php echo U('Nav/index')?>">分类管理</a></li>
+			<li><a href="javascript:;">编辑</a></li>
+		</ul>
+    </div>
+    <div class="formbody">
+		<form action="" method="post" enctype="multipart/form-data">
+			<div id="usual1" class="usual">
+				<div class="itab">
+					<ul>
+						<li><a href="#tab1" class="selected">基本信息</a></li>
+					</ul>
+					<ul class="toolbar">
+						<li style="height:30px;line-height:30px;padding-right:0;text-align: center;width: 100px;background: #3c8dbc;">
+							<a href="javascript:;" onclick="javascript:history.back();return false;" style="padding-left:0; padding-right:0;color:#ffffff;"><img src="__PUBLIC__/Admin/images/back.png" class="back"> 返回</a>
+						</li>
+					</ul>
+				</div>
+				<div id="tab1" class="tabson">
+					<input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
+					<ul class="forminfo">
+						<li><label>上级分类<b>*</b></label>
+						<select name="parent_id" style="height: 34px; border: 1px solid #c7c7c7; border-radius: 5%; width:15%; text-align: center;">
+							<option value="0">上级分类</option>
+									<?php foreach ($catData as $k => $v):
+											// 跳过当前分类和子分类
+											if($v['id'] == $data['id'] || in_array($v['id'], $children))
+												continue ;
+											if($v['id'] == $data['parent_id'])
+												$select = 'selected="selected"';
+											else
+												$select = '';
+									?>
+									<option <?php echo $select; ?> value="<?php echo $v['id'];?>"><?php echo str_repeat('-', 8*$v['level']) . $v['name']; ?></option>
+									<?php endforeach; ?>
+						</select>
+						</li>
+						<li><label>分类名称<b>*</b></label><input name="name" value="{$data.name}" type="text" class="dfinput" /></li>
+						<li><label>链接地址<b>*</b></label><input name="url" value="{$data.url}" type="text" class="dfinput" /></li>
+						<!--<li><label>分类图片<b>*</b></label>-->
+							<!--<a href="javascript:;" class="file">选择文件<input type="file" name="cat_img" id="file"></a>-->
+							<!--<input type="text" value="{$data.cat_img}" id="file_road" class="dfinput">-->
+						<!--</li>-->
+						<!--<if condition="$data['cat_img'] neq ''">-->
+							<!--<li>-->
+								<!--<img src="{$data.cat_img}" style="width:100px;height:80px;margin-left:85px"/>-->
+							<!--</li>-->
+						<!--</if>-->
+						<li style="height:34px; line-height:34px"><label>是否显示<b>*</b></label>
+							<div class="onoff">
+								<label for="switch1" class="cb-enable <if condition='$data[is_show] eq 1'>selected</if>">显示</label>
+								<label for="switch0" class="cb-disable <if condition='$data[is_show] eq 0'>selected</if>">隐藏</label>
+								<input type="radio" id="switch1"  name="is_show" value="1" checked="<if condition='$data[is_show] eq 1'>checked<else />checked</if>">
+								<input type="radio" id="switch0" name="is_show" value="0" checked="<if condition='$data[is_show] eq 0'>checked</if>">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<ul>
+					<li><label>&nbsp;</label><input name="submit" type="submit" class="btn" value="保　存"/></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript">
+        $("#usual1 ul").idTabs();
+        $("#tab1 ul li div.onoff label").click(function (){
+            $(this).addClass("selected").siblings("label").removeClass("selected");
+        });
+	</script>
+	<script>
+        var file = $('#file'),
+            file_road = $('#file_road');
+        file.on('change', function( e ){
+            //e.currentTarget.files 是一个数组，如果支持多个文件，则需要遍历
+            var name = e.currentTarget.files[0].name;
+            file_road.val( name );
+        });
+	</script>
+</body>
+</html>

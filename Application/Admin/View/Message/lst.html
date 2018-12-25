@@ -1,0 +1,55 @@
+<include file="Public:header" />
+<script src="__PUBLIC__/Admin/js/myAjax.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Admin/js/layer/layer.js"></script>
+<body>
+	<div class="place">
+		<span>当前位置：</span>
+		<ul class="placeul">
+			<li><a href="javascript:;">留言管理</a></li>
+			<li><a href="<?php echo U('Message/lst')?>">户型规划申请列表</a></li>
+			<li><a href="<?php echo U('Message/lst')?>">列表</a></li>
+		</ul>
+    </div>
+<div class="rightinfo">
+    <div class="tools">		
+
+    </div>
+    <table class="tablelist">
+    	<thead>
+			<tr>
+				<th>ID</th>
+				<th>姓名</th>
+				<th>电话</th>
+				<th>风格</th>
+				<th>面积</th>
+				<th>提交时间</th>
+				<th style="text-align:center" width="75">操作</th>
+			</tr>
+        </thead>
+        <tbody>
+			<foreach name="list" item="v">
+			<tr>
+				<td>{$v.id}</td>
+				<td>{$v.username}</td>
+				<td>{$v.tel}</td>
+				<td>{$v.style}</td>
+				<td>{$v.area}</td>
+				<td>{$v.addtime|date='Y-m-d H:i:s',###}</td>
+				<td>
+					<a onclick="return confirm('确定要删除吗？');" href="<?php echo U('del')?>?id=<?php echo $v['id']?>&active=delete" class="tablelink">删除</a>
+				</td>
+			</tr>
+			</foreach>
+        </tbody>
+    </table>
+    <div class="pagin">
+        <div class="paginList">
+			<?php echo $page ?>
+        </div>
+    </div>
+</div>    
+<script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+</script>
+</body>
+</html>

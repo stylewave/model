@@ -1,0 +1,30 @@
+﻿<include file="Public:header" />
+<div class="main" >
+    <div class="banners">
+        <foreach name="ad" item="v">
+            <if condition="$v['pid'] eq 12">
+                <img src="{$v.imgsrc}" alt="">
+            </if>
+        </foreach>
+    </div>
+    <div class="IndexNavbar">
+        <div class="block">
+            <div class="nav p">
+                <a href="javascript:;" class="actives">合作伙伴</a>
+            </div>
+        </div>
+    </div>
+    <div class="AboutContacts">
+        <div class="block Products">
+            <foreach name="list" item="v">
+            <dl>
+                <dt><a href="javascript:;"><img src="{$v.imgsrc}" alt=""></a></dt>
+            </dl>
+            </foreach>
+        </div>
+        <div class="other_page">
+            <div>{$page}</div>
+        </div>
+    </div>
+</div><!-- main end-->
+<include file="Public:footer" />

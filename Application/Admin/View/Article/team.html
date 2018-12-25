@@ -1,0 +1,129 @@
+<include file="Public:header" />
+<body>
+<link href="__PUBLIC__/Admin/css/select.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.idTabs.min.js"></script>
+<link href="__PUBLIC__/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<div class="place">
+	<span>当前位置：</span>
+	<ul class="placeul">
+		<li><a href="javascript:;">联系我们</a></li>
+		<li><a href="<?php echo U('Article/teamList')?>">联系我们列表</a></li>
+		<li><a href="javascript:;">编辑</a></li>
+	</ul>
+</div>
+<div class="formbody">
+<form action="__SELF__" method="post" enctype="multipart/form-data">
+<input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
+	<div id="usual1" class="usual"> 
+		<div class="itab">
+			<ul> 
+				<li><a href="#tab1" class="selected">基本信息</a></li>
+				<!--<li><a href="#tab2">设计师介绍</a></li>-->
+			</ul>
+			<ul class="toolbar">
+				<li style="height:30px;line-height:30px;padding-right:0;text-align: center;width: 100px;background: #3c8dbc;">
+					<a href="javascript:;" onclick="javascript:history.back();return false;" style="padding-left:0; padding-right:0;color:#ffffff;">
+						<img src="__PUBLIC__/Admin/images/back.png" class="back"> 返回</a>
+				</li>
+			</ul>
+		</div> 
+		<div id="tab1" class="tabson">
+			<ul class="forminfo">
+
+				<li><label>地址<b>*</b></label><input name="area" value="{$data.area}" type="text" class="dfinput" style="width:520px;"/></li>
+				<li><label>详细地址<b>*</b></label><input name="address" value="{$data.address}" type="text" class="dfinput" style="width:520px;"/></li>
+				<li><label>缩略图<b>*</b></label>
+					<a href="javascript:;" class="file">选择文件<input type="file" name="pic" id="file" accept="image/jpeg,image/png"></a>
+					<input type="text" value="{$data.pic}" id="file_road" class="dfinput">
+				</li>
+                <if condition="$data['pic'] neq ''">
+				<li>
+					<img src="__PUBLIC__/Uploads/{$data.pic}" style="width:120px;height:60px;margin-left:85px"/>
+				</li>
+				</if>
+				<li><label>电话<b>*</b></label><input name="tel" value="{$data.tel}" type="text" class="dfinput" style="width:520px;"/></li>
+				<li><label>电邮<b>*</b></label><input name="tels" value="{$data.tels}" type="text" class="dfinput" style="width:520px;"/></li>
+				<li><label>Nicole<b>*</b></label><input name="nicole" value="{$data.nicole}" type="text" class="dfinput" style="width:520px;"/></li>
+				<li style="height:34px; line-height:34px"><label>是否显示<b>*</b></label>
+					<div class="onoff">
+						<label for="switch1" class="cb-enable <if condition='$data[is_floor] eq 1'>selected</if>">显示</label>
+						<label for="switch0" class="cb-disable <if condition='$data[is_floor] eq 0'>selected</if>">隐藏</label>
+						<input type="radio" id="switch1"  name="is_floor" value="1" checked="<if condition='$data[is_floor] eq 1'>checked<else />checked</if>">
+						<input type="radio" id="switch0" name="is_floor" value="0" checked="<if condition='$data[is_floor] eq 0'>checked</if>">
+					</div>
+				</li>
+			</ul>
+		</div> 
+		<!--<div id="tab2" class="tabson">  -->
+			<!--<textarea class="span12 ckeditor" id="post_content" name="content" title=""><?php echo htmlspecialchars_decode($data['content'])?></textarea>			-->
+		<!--</div> -->
+		<ul>
+			<li><label>&nbsp;</label><input name="submit" type="submit" class="btn" value="保　存"/></li>
+		</ul>
+	</div>
+</form>
+</div>  
+</body>
+</html>
+<script type="text/javascript">
+    window.UEDITOR_Admin_URL = "__ROOT__/Public/plugins/Ueditor/";
+    var URL_upload = "{$URL_upload}";
+    var URL_fileUp = "{$URL_fileUp}";
+    var URL_scrawlUp = "{$URL_scrawlUp}";
+    var URL_getRemoteImage = "{$URL_getRemoteImage}";
+    var URL_imageManager = "{$URL_imageManager}";
+    var URL_imageUp = "{$URL_imageUp}";
+    var URL_getMovie = "{$URL_getMovie}";
+    var URL_home = "{$URL_home}";    
+</script>
+<load href="__ROOT__/Public/plugins/Ueditor/ueditor.config.js"/>
+<load href="__ROOT__/Public/plugins/Ueditor/ueditor.all.js"/>
+<script type="text/javascript">
+    $("#usual1 ul").idTabs();
+    $("#tab1 ul li div.onoff label").click(function (){
+        $(this).addClass("selected").siblings("label").removeClass("selected");
+    });
+</script>
+<script>
+    var file = $('#file'),
+        file_road = $('#file_road');
+    file.on('change', function( e ){
+        //e.currentTarget.files 是一个数组，如果支持多个文件，则需要遍历
+        var name = e.currentTarget.files[0].name;
+        file_road.val( name );
+    });
+</script>
+<script type="text/javascript">
+    var editor;
+    $(function () {
+        //具体参数配置在  editor_config.js 中
+        var options = {
+            zIndex: 999,
+            initialFrameWidth: "100%", //初化宽度
+            initialFrameHeight: 400, //初化高度
+            focus: false, //初始化时，是否让编辑器获得焦点true或false
+            maximumWords: 99999, removeFormatAttributes: 'class,style,lang,width,height,align,hspace,valign',//允许的最大字符数 'fullscreen',
+            pasteplain:false, //是否默认为纯文本粘贴。false为不使用纯文本粘贴，true为使用纯文本粘贴
+            autoHeightEnabled: true,
+        };
+        editor = new UE.ui.Editor(options);
+        editor.render("post_content");
+    });
+</script>
+<script type="text/javascript">
+    var editor;
+    $(function () {
+        //具体参数配置在  editor_config.js 中
+        var options = {
+            zIndex: 999,
+            initialFrameWidth: "50%", //初化宽度
+            initialFrameHeight: 200, //初化高度
+            focus: false, //初始化时，是否让编辑器获得焦点true或false
+            maximumWords: 99999, removeFormatAttributes: 'class,style,lang,width,height,align,hspace,valign',//允许的最大字符数 'fullscreen',
+            pasteplain:false, //是否默认为纯文本粘贴。false为不使用纯文本粘贴，true为使用纯文本粘贴
+            autoHeightEnabled: true,
+        };
+        editor = new UE.ui.Editor(options);
+        editor.render("post_contents");
+    });
+</script>

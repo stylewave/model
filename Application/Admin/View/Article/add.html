@@ -1,0 +1,196 @@
+<include file="Public:header" />
+<body>
+<link href="__PUBLIC__/Admin/css/select.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.idTabs.min.js"></script>
+<link href="__PUBLIC__/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<!--时间、日期-->
+<link href="__PUBLIC__/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+<script src="__PUBLIC__/plugins/daterangepicker/moment.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+<div class="place">
+	<span>当前位置：</span>
+	<ul class="placeul">
+		<li><a href="javascript:;">文章管理</a></li>
+		<li><a href="<?php echo U('Article/index')?>">文章列表</a></li>
+		<li><a href="javascript:;">编辑文章</a></li>
+	</ul>
+</div>
+<div class="formbody">
+<form action="__SELF__" method="post" enctype="multipart/form-data">
+<input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
+	<div id="usual1" class="usual"> 
+		<div class="itab">
+			<ul> 
+				<li><a href="#tab1" class="selected">基本信息</a></li>
+				<li><a href="#tab2">文章内容</a></li> 
+			</ul>
+			<ul class="toolbar">
+				<li style="height:30px;line-height:30px;padding-right:0;text-align: center;width: 100px;background: #3c8dbc;">
+					<a href="javascript:;" onclick="javascript:history.back();return false;" style="padding-left:0; padding-right:0;color:#ffffff;">
+						<img src="__PUBLIC__/Admin/images/back.png" class="back"> 返回</a>
+				</li>
+			</ul>
+		</div> 
+		<div id="tab1" class="tabson">
+			<ul class="forminfo">
+				<li><label>文章分类<b>*</b></label>
+					<select name="cat_id" style="height:34px;border:1px solid #c7c7c7;border-radius:5%;width:20%;text-align:center;">
+						<option value="">选择分类</option>
+						<?php foreach ($catData as $k => $v):
+								if($v['id'] == $data['cat_id']){
+									$select = 'selected="selected"';
+								}else{
+									$select = '';
+								}
+						?>
+						<option {$select} value="{$v.id}"><?php echo str_repeat('-',8*$v['level']).$v['name'];?></option>
+						<?php endforeach;?>
+					</select><font style="color:red;padding-left:20px">必须选择文章分类</font>
+				</li>	
+				<li><label>文章标题<b>*</b></label><input name="title" value="{$data.title}" type="text" class="dfinput" style="width:520px;"/></li>
+				<li><label>文章缩略图<b>*</b></label>
+					<a href="javascript:;" class="file">选择文件<input type="file" name="imgsrc" id="file" accept="image/jpeg,image/png"></a>
+					<input type="text" value="{$data.imgsrc}" id="file_road" class="dfinput">
+				</li>
+                <if condition="$data['imgsrc'] neq ''">
+				<li>
+					<img src="{$data.imgsrc}" style="width:120px;height:60px;margin-left:85px"/>
+				</li>
+				</if>
+				<!--<li><label>首页缩略图<b>*</b></label>-->
+					<!--<a href="javascript:;" class="file">选择文件<input type="file" name="thumb" id="files" accept="image/jpeg,image/png"></a>-->
+					<!--<input type="text" value="{$data.thumb}" id="file_roads" class="dfinput" style="width:357px;vertical-align: top;">-->
+				<!--</li>-->
+				<!--<if condition="$data['thumb'] neq ''">-->
+					<!--<li>-->
+						<!--<img src="{$data.thumb}" style="width:120px;height:80px;margin-left:85px"/>-->
+					<!--</li>-->
+				<!--</if>-->
+				<li><label>文章描述<b>*</b></label> 
+					<textarea name="description" rows="5" class="desc">{$data.description}</textarea>
+				</li>
+				<li style="height:34px; line-height:34px"><label>是否显示<b>*</b></label>
+					<div class="onoff">
+						<label for="switch1" class="cb-enable <if condition='$data[is_floor] eq 1'>selected</if>">显示</label>
+						<label for="switch0" class="cb-disable <if condition='$data[is_floor] eq 0'>selected</if>">隐藏</label>
+						<input type="radio" id="switch1"  name="is_floor" value="1" checked="<if condition='$data[is_floor] eq 1'>checked<else />checked</if>">
+						<input type="radio" id="switch0" name="is_floor" value="0" checked="<if condition='$data[is_floor] eq 0'>checked</if>">
+					</div>
+				</li>
+				<!--<li><label>时间<b>*</b></label>-->
+					<!--<input name="add_time" id="start_time" value="{$data.add_time|date='Y-m-d',###}" type="text" class="dfinput" style="width:160px;text-indent:40px"/>-->
+					<!--<span style="border-radius:0;border-color:#d2d6de;background-color:#fff;padding:7px 10px;position:relative;border-right:1px solid #cfcfcf; bottom:0px;right:162px;">-->
+						<!--<i class="glyphicon glyphicon-calendar fa fa-calendar" style="padding-left:0"></i>-->
+					<!--</span>-->
+				<!--</li>-->
+				<!--<li><label>链接<b>*</b></label><input name="url" value="{$data.url}" type="text" class="dfinput" style="width:520px;"/></li>-->
+				<!--<li><label>首页简述<b>*</b></label>-->
+					<!--<textarea class="span12 ckeditor" id="post_contents" name="contents"  style="padding-left: 85px;"><?php echo htmlspecialchars_decode($data['contents'])?></textarea>-->
+				<!--</li>-->
+			</ul>
+		</div> 
+		<div id="tab2" class="tabson">
+			<textarea class="span12 ckeditor" id="post_content" name="content" title="">{$data.content|htmlspecialchars_decode}</textarea>
+		</div> 
+		<ul>
+			<li><label>&nbsp;</label><input name="submit" type="submit" class="btn" value="保　存"/></li>
+		</ul>
+	</div>
+</form>
+</div>  
+</body>
+</html>
+<script type="text/javascript">
+    window.UEDITOR_Admin_URL = "__ROOT__/Public/plugins/Ueditor/";
+    var URL_upload = "{$URL_upload}";
+    var URL_fileUp = "{$URL_fileUp}";
+    var URL_scrawlUp = "{$URL_scrawlUp}";
+    var URL_getRemoteImage = "{$URL_getRemoteImage}";
+    var URL_imageManager = "{$URL_imageManager}";
+    var URL_imageUp = "{$URL_imageUp}";
+    var URL_getMovie = "{$URL_getMovie}";
+    var URL_home = "{$URL_home}";    
+</script>
+<load href="__ROOT__/Public/plugins/Ueditor/ueditor.config.js"/>
+<load href="__ROOT__/Public/plugins/Ueditor/ueditor.all.js"/>
+<script type="text/javascript">
+    $("#usual1 ul").idTabs();
+    $("#tab1 ul li div.onoff label").click(function (){
+        $(this).addClass("selected").siblings("label").removeClass("selected");
+    });
+</script>
+<script>
+    var file = $('#file'),
+        file_road = $('#file_road');
+    file.on('change', function( e ){
+        //e.currentTarget.files 是一个数组，如果支持多个文件，则需要遍历
+        var name = e.currentTarget.files[0].name;
+        file_road.val( name );
+    });
+</script>
+<script>
+    var files = $('#files'),
+        file_roads = $('#file_roads');
+    files.on('change', function( e ){
+        //e.currentTarget.files 是一个数组，如果支持多个文件，则需要遍历
+        var name = e.currentTarget.files[0].name;
+        file_roads.val( name );
+    });
+</script>
+<script type="text/javascript">
+    var editor;
+    $(function () {
+        //具体参数配置在  editor_config.js 中
+        var options = {
+            zIndex: 999,
+            initialFrameWidth: "100%", //初化宽度
+            initialFrameHeight: 400, //初化高度
+            focus: false, //初始化时，是否让编辑器获得焦点true或false
+            maximumWords: 99999, removeFormatAttributes: 'class,style,lang,width,height,align,hspace,valign',//允许的最大字符数 'fullscreen',
+            pasteplain:false, //是否默认为纯文本粘贴。false为不使用纯文本粘贴，true为使用纯文本粘贴
+            autoHeightEnabled: true,
+        };
+        editor = new UE.ui.Editor(options);
+        editor.render("post_content");
+    });
+</script>
+<script type="text/javascript">
+    var editor;
+    $(function () {
+        //具体参数配置在  editor_config.js 中
+        var options = {
+            zIndex: 999,
+            initialFrameWidth: "50%", //初化宽度
+            initialFrameHeight: 200, //初化高度
+            focus: false, //初始化时，是否让编辑器获得焦点true或false
+            maximumWords: 99999, removeFormatAttributes: 'class,style,lang,width,height,align,hspace,valign',//允许的最大字符数 'fullscreen',
+            pasteplain:false, //是否默认为纯文本粘贴。false为不使用纯文本粘贴，true为使用纯文本粘贴
+            autoHeightEnabled: true,
+        };
+        editor = new UE.ui.Editor(options);
+        editor.render("post_contents");
+    });
+</script>
+<!--时间、日期js-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#start_time').daterangepicker({
+            format:"YYYY-MM-DD",
+            singleDatePicker: true,
+            showDropdowns: true,
+            minDate:'1970-01-01',
+            maxDate:'2050-01-01',
+            startDate:'{$data.addt_ime|date="Y-m-d",###}',
+            locale : {
+                applyLabel : '确定',
+                cancelLabel : '取消',
+                fromLabel : '起始时间',
+                toLabel : '结束时间',
+                customRangeLabel : '自定义',
+                daysOfWeek : [ '日', '一', '二', '三', '四', '五', '六' ],
+                monthNames : [ '一月', '二月', '三月', '四月', '五月', '六月','七月', '八月', '九月', '十月', '十一月', '十二月' ],
+                firstDay : 1
+            }
+        });
+    });
+</script>

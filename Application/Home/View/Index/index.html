@@ -1,0 +1,179 @@
+﻿<include file="Public:header" />
+<div class="main" >
+    <!-- banner轮播-->
+    <!--首页轮播 -->
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery.SuperSlide.2.1.1.js"></script>
+    <div id="slideBox" class="slideBox">
+        <div class="bd">
+            <ul>
+                <foreach name="ad" item="v">
+                    <if condition="$v['pid'] eq 3">
+                        <li><a href="{$v.url}" target="_blank"><img src="{$v.imgsrc}" /></a></li>
+                    </if>
+                </foreach>
+            </ul>
+        </div>
+        <!-- 选中 -->
+        <!-- <div class="hd">
+            <ul>
+                <foreach name="ad" item="v">
+                <if condition="$v['pid'] eq 3">
+                <li></li>
+                </if>
+                </foreach>
+            </ul>
+        </div> -->
+        <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+    </div>
+    <script type="text/javascript">
+        jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,effect:"left",interTime:"5000"});
+    </script>
+    <!-- banner轮播  end-->
+    <!--商品展示-->
+    <div class="IndexProduct p">
+        <div class="block p">
+            <div class="IndexTitle">
+                <p><img src="__PUBLIC__/Home/images/indexproduct.png" alt=""></p>
+                <b><span>商品</span>展示</b>
+            </div>
+            <div class="contact p">
+                <volist name="product" id="value">
+                    <volist name="value.list" id="v">
+                <div class="lf">
+                    <a href="{:U('Productdetail')}?id={$v.id}"><img src="{$v.img}" alt="{$v.title}"></a>
+                    <div>
+                        <a href="{:U('Productdetail')}?id={$v.id}" class="h1">{$v.title}</a>
+                        <p class="info">{$v.description}</p>
+                        <a href="{:U('Productdetail')}?id={$v.id}"><img src="__PUBLIC__/Home/images/add.png" alt=""></a>
+                    </div>
+                </div>
+                    </volist>
+                </volist>
+            </div>
+        </div>
+    </div>
+    <!--介绍-->
+    <div style="height: 325px;background: url('__PUBLIC__/Home/images/index_25.jpg') no-repeat center center;padding-top:1px;margin-top:37px;">
+        <p style="width:800px;margin:0 auto;margin-top:150px;font-size: 36px;color:#eeeeee;line-height: 45px;text-align: center;">成为全球日化行业一流的BABY ANGLE服务供应商以及消费者首选的面膜品牌</p>
+    </div>
+    <!--关于我们  -->
+    <div class="IndexAbout">     
+        <div style="height: 60px;"> </div>   
+        <div class="IndexTitle">
+            <p><img src="__PUBLIC__/Home/images/indexabout.png" alt=""></p>
+            <b style="color:#fff;">关于我们</b>
+        </div>
+        <div class="block" >
+            <p >{$about.description}</p>
+            <p style="height: 45px;"></p>
+            <div style="margin-top:50px">
+                <a href="{:U('about')}">查看更多</a>
+                <a href="{:U('contact')}">联系我们</a>
+            </div>
+        </div>
+    </div>        
+    <!--新闻中心-->
+    <div class="IndexNews">
+        <div class="block p">
+            <div class="in_block Lefts">
+                <ul> <span class="actives">公司新闻</span>  <a href="{:U('news')}?id=151" class="rt" style="color:#0070da;font-size: 13px;margin-top:15px;">MORE+</a></ul>
+                <div class="contacts">
+                    <div>
+                        <foreach name="news" item="v">
+                        <div class="list">
+                            <div>
+                                <a href="{:U('newsdetail')}?id={$v.id}"><img src="{$v.imgsrc}" alt=""></a>
+                                <a href="{:U('newsdetail')}?id={$v.id}" class="h1">{$v.title}</a>
+                                <p class="info">{$v.description}</p>
+                            </div>
+                        </div>
+                        </foreach>
+                    </div>
+                    <!--<div style="display: none">
+                        <div class="list">
+                            <div>
+                                <a href="NewsDetail.html"><img src="__PUBLIC__/Home/images/index_31.jpg" alt=""></a>
+                                <a href="NewsDetail.html" class="h1">是一家跨境BABY ANGLE保税领域的B2B电商</a>
+                                <p class="info">目前集中澳洲、新西兰、美国等多地的一手货源，实现从国外到国内终端的物流、仓储、清关、配送、售后等所有环节，为客户提供省事省力又省心的采购体验</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div>
+                                <a href="NewsDetail.html"><img src="__PUBLIC__/Home/images/index_29.jpg" alt=""></a>
+                                <a href="NewsDetail.html" class="h1">是一家跨境保税领域的B2B电商BABY ANGLE</a>
+                                <p class="info">目前集中澳洲、新西兰、美国等多地的一手货源，实现从国外到国内终端的物流、仓储、清关、配送、售后等所有环节，为客户提供省事省力又省心的采购体验</p>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <div class="in_block Rights rt" style="width: 450px;">
+                <div class="title">
+                    <span>行业新闻</span>
+                    <a href="{:U('news')}?id=152" class="rt" style="color:#0070da;font-size: 13px;margin-top:15px;">MORE+</a>
+                </div>
+                <foreach name="news2" item="v">
+                <div class=" list p">
+                    <div class="in_block data">
+                        <b>{$v.addtime|date='d',###}</b>
+                        <p>{$v.addtime|date='Y-m',###}</p>
+                    </div>
+                    <div class="in_block info">
+                        <a href="{:U('newsdetail')}?id={$v.id}" class="h1">{$v.title}</a>
+                        <p>{$v.description|getSubstr=0,55}</p>
+                    </div>
+                </div>
+                </foreach>
+            </div>
+        </div>    
+    </div>
+    <script type="text/javascript">
+//        $(".IndexNews div.Lefts>ul>span").click(function(){
+//            $(this).addClass("actives").siblings("span").removeClass("actives");
+//            $(".IndexNews div.contacts>div").eq($(this).index()).show().siblings("div").hide();
+//        });
+    </script>
+    <!--合作客户-->
+    <div class="IndexCooperation">
+        <div class="block">
+            <div class="IndexTitle">
+                <p><img src="__PUBLIC__/Home/images/123_03.png" alt=""></p>
+                <b><span>合作</span>客户</b>
+            </div>    
+            <div style="height:30px;"></div>
+             <!-- Swiper -->
+            <link rel="stylesheet" href="__PUBLIC__/Home/css/swiper-4.1.0.min.css">
+            <style>
+
+            </style>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <foreach name="friend" item="v">
+                  <div class="swiper-slide"><a href="javascript:;"><img src="{$v.imgsrc}" alt=""></a></div>
+                </foreach>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>  
+          <!-- Swiper JS -->
+        <script src="__PUBLIC__/Home/js/swiper.min.js"></script>
+
+          <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 5,
+              slidesPerColumn: 2,
+              spaceBetween: 10,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+        </script>          
+    </div>
+</div><!-- main end-->
+<include file="Public:footer" />

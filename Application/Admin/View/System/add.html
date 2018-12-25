@@ -1,0 +1,46 @@
+<include file="Public:header" />
+<body>
+	<div class="place">
+		<span>当前位置：</span>
+		<ul class="placeul">
+			<li><a href="#">系统设置</a></li>
+			<li><a href="#">网站SEO设置</a></li>
+			<li><a href="#">编辑</a></li>
+		</ul>
+    </div>
+    <div class="formbody">    
+		<div class="formtitle"><span>基本信息</span>
+		<ul class="toolbar">
+			<li style="height:30px;line-height:30px;padding-right:0;text-align: center;width: 100px;background: #3c8dbc;">
+				<a href="javascript:;" onclick="javascript:history.back();return false;" style="padding-left:0; padding-right:0;color:#ffffff;">
+					<img src="__PUBLIC__/Admin/images/back.png" class="back"> 返回</a>
+			</li>
+        </ul>
+		</div>
+		<form action="" method="post" enctype="multipart/form-data">
+			<ul class="forminfo">
+
+				<li><label>栏目名称<b>*</b></label>
+					<select name="pid" style="height:34px;border:1px solid #c7c7c7;border-radius:5%;width:15%;text-align:center;">
+						<option value="">选择栏目</option>
+						<?php foreach ($nav as $k => $v):
+						if($v['id'] == $data['pid']){
+						$select = 'selected="selected"';
+						}else{
+						$select = '';
+						}
+						?>
+						<option <?php echo $select;?> value="<?php echo $v['id']; ?>"><?php echo str_repeat('-', 8*$v['level']) . $v['name']; ?></option>
+						<?php endforeach; ?>
+					</select>
+				</li>
+				<li><label>栏目标题</label><input name="title" value="{$data.title}" type="text" class="dfinput" /></li>
+				<li><label>关键字</label><textarea name="keywords" rows="5" class="desc">{$data.keywords}</textarea>
+					<i>多个关键字用“,”隔开</i></li>
+				<li><label>描述</label><textarea name="description" rows="5" class="desc">{$data.description}</textarea><i>多个描述用“,”隔开</i></li>
+				<li><label>&nbsp;</label><input name="submit" type="submit" class="btn" value="确认保存"/></li>
+			</ul>
+		</form>
+    </div>
+</body>
+</html>
